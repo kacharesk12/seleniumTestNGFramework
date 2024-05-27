@@ -6,11 +6,20 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="testcases.registerTestcases">
+        <methods>
+          <include name="browserAndURLlaunch"/>
+          <include name="ExtentReport"/>
+          <include name="verifyRegisterwithblankData"/>
+          <include name="ExtentReport1"/>
+        </methods>
+      </class> <!-- testcases.registerTestcases -->
       <class name="testcases.logintestcase">
         <methods>
           <include name="browserAndURLlaunch"/>
           <include name="ExtentReport"/>
           <include name="verifyloginwithinvalidData"/>
+          <include name="verifyloginwithvalidData"/>
           <include name="ExtentReport1"/>
         </methods>
       </class> <!-- testcases.logintestcase -->

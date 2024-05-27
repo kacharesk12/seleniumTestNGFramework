@@ -53,17 +53,7 @@
 			<version>2.16.1</version>
 		</dependency>
 
-		<dependency>
-			<groupId>demo</groupId>
-			<artifactId>15febselenium</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.github.yev</groupId>
-			<artifactId>screenshot</artifactId>
-			<version>0.2</version>
-		</dependency>
+		
 
 	</dependencies>
 
