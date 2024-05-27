@@ -155,14 +155,14 @@
                   </a> <!-- verifyloginwithinvalidData -->
                   <span class="method-name">verifyloginwithinvalidData</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-danger alert-dismissible&apos;]&quot;}
-  (Session info: chrome=125.0.6422.60)
+  (Session info: chrome=125.0.6422.76)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [32ce36ff7d9525e4065af97eb15055dd, findElement {using=xpath, value=//div[@class=&apos;alert alert-danger alert-dismissible&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.60, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53052}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53052/devtoo..., se:cdpVersion: 125.0.6422.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32ce36ff7d9525e4065af97eb15055dd
+Command: [320004b32c4a1ad76f82bf68cf588847, findElement {using=xpath, value=//div[@class=&apos;alert alert-danger alert-dismissible&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.76, chrome: {chromedriverVersion: 125.0.6422.76 (67dcf7562b8f..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51621}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51621/devtoo..., se:cdpVersion: 125.0.6422.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 320004b32c4a1ad76f82bf68cf588847
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -186,21 +186,6 @@ Session ID: 32ce36ff7d9525e4065af97eb15055dd
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.logintestcase</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyloginwithvalidData">
-                  </a> <!-- verifyloginwithvalidData -->
-                  <span class="method-name">verifyloginwithvalidData</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">testcases.registerTestcases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -220,6 +205,21 @@ Session ID: 32ce36ff7d9525e4065af97eb15055dd
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.logintestcase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyloginwithvalidData">
+                  </a> <!-- verifyloginwithvalidData -->
+                  <span class="method-name">verifyloginwithvalidData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -230,6 +230,9 @@ Session ID: 32ce36ff7d9525e4065af97eb15055dd
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;resources.listeners&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.registerTestcases&quot;/&gt;
@@ -277,24 +280,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyRegisterwithvalidData')
 data.setCell(0, 2, 'testcases.registerTestcases')
-data.setCell(0, 3, 2492);
+data.setCell(0, 3, 2529);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyRegisterwithblankData')
-data.setCell(1, 2, 'testcases.registerTestcases')
-data.setCell(1, 3, 1521);
+data.setCell(1, 1, 'verifyloginwithinvalidData')
+data.setCell(1, 2, 'testcases.logintestcase')
+data.setCell(1, 3, 2269);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyloginwithvalidData')
 data.setCell(2, 2, 'testcases.logintestcase')
-data.setCell(2, 3, 1426);
+data.setCell(2, 3, 1604);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyloginwithinvalidData')
-data.setCell(3, 2, 'testcases.logintestcase')
-data.setCell(3, 3, 1387);
+data.setCell(3, 1, 'verifyRegisterwithblankData')
+data.setCell(3, 2, 'testcases.registerTestcases')
+data.setCell(3, 3, 1566);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -309,13 +312,22 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">testcases.registerTestcases</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">verifyRegisterwithinvalidData</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.logintestcase</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">ExtentReport</span>
+                <br/>
+                <span class="ignored-method-name">ExtentReport1</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -328,43 +340,54 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.registerTestcases</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">ExtentReport1</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">browserAndURLlaunch</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">490 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyRegisterwithvalidData</span>
-                <span class="method-start">3604 ms</span>
+                <span class="method-start">4470 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">browserAndURLlaunch</span>
-                <span class="method-start">6099 ms</span>
+                <span class="method-start">7003 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyRegisterwithblankData</span>
-                <span class="method-start">8602 ms</span>
+                <span class="method-start">9861 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.logintestcase</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browserAndURLlaunch</span>
-                <span class="method-start">10128 ms</span>
+                <span class="method-start">11433 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyloginwithinvalidData</span>
-                <span class="method-start">12697 ms</span>
+                <span class="method-start">14779 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">browserAndURLlaunch</span>
-                <span class="method-start">14095 ms</span>
+                <span class="method-start">17058 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyloginwithvalidData</span>
-                <span class="method-start">17870 ms</span>
+                <span class="method-start">20699 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.registerTestcases</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">ExtentReport</span>
+                <span class="method-start">22416 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
